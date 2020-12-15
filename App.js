@@ -6,9 +6,11 @@ console. disableYellowBox = true;
 export default class App extends React.Component{
   render(){
     return(
-      <View>
+      <View style = {styles.container}>
         <Welcome/>
       </View>
     )
   }
 }
+const styles = StyleSheet.create({ 
+  container: { flex: 1,  backgroundColor:'#F8BE85', alignItems: 'center', justifyContent: 'center', }, });
